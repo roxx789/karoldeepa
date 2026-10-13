@@ -18,7 +18,6 @@
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         
-        // Initialize Pixel
         fbq('init', 'YOUR_PIXEL_ID'); 
         fbq('track', 'PageView');
     </script>
@@ -56,104 +55,85 @@
     <!-- Mobile Screen Container -->
     <div class="w-full max-w-md bg-[#0e1022] min-h-screen sm:min-h-[850px] sm:rounded-3xl overflow-hidden shadow-2xl border border-gray-800 flex flex-col justify-between relative">
 
-        <div>
-            <!-- Top Browser / Header Bar -->
-            <div class="flex items-center justify-between px-4 py-3 bg-[#13162c] text-xs text-gray-400 border-b border-gray-800">
-                <div class="flex items-center space-x-2">
-                    <span class="text-gray-300 font-bold">✕</span>
-                    <span class="bg-red-600 w-2 h-2 rounded-full inline-block animate-pulse"></span>
-                    <span class="text-white font-medium uppercase tracking-wider text-[10px]">LIVE</span>
+        <div class="p-5 space-y-6">
+
+            <!-- Profile Header -->
+            <div class="flex items-center space-x-3 pt-2">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Trade With Gautam" class="w-12 h-12 rounded-full border-2 border-indigo-500 object-cover">
                 </div>
-                <div class="bg-[#1b1f3b] px-3 py-1 rounded-full text-[11px] text-gray-300 flex items-center space-x-1 border border-gray-700">
-                    <span>🔒</span>
-                    <span class="truncate max-w-[130px]">gautamteamin.vercel.app</span>
+                <div>
+                    <div class="flex items-center space-x-1">
+                        <h2 class="font-bold text-base text-white">Trade With Gautam</h2>
+                        <span class="text-blue-400 text-xs">✔</span>
+                    </div>
+                    <p class="text-xs text-gray-400">Trading & Learning Community</p>
                 </div>
-                <a href="#" onclick="handleTelegramClick(event)" class="bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold px-3 py-1 rounded-full transition">
-                    JOIN NOW →
+            </div>
+
+            <!-- Hero Section -->
+            <div class="space-y-2">
+                <h1 class="text-3xl font-extrabold tracking-tight leading-tight">
+                    Learn Trading <br>
+                    <span class="gradient-text">The Right Way</span>
+                </h1>
+                <p class="text-xs text-gray-300 leading-relaxed">
+                    Simple concepts, market awareness and chart-reading education — brought together in one Telegram community.
+                </p>
+            </div>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-[#191d38] border border-gray-700/60 px-3 py-1.5 rounded-lg text-gray-200 flex items-center space-x-1.5">
+                    <span>📈</span> <span>Market Concepts</span>
+                </span>
+                <span class="bg-[#191d38] border border-gray-700/60 px-3 py-1.5 rounded-lg text-gray-200 flex items-center space-x-1.5">
+                    <span>📊</span> <span>Chart Reading</span>
+                </span>
+                <span class="bg-[#191d38] border border-gray-700/60 px-3 py-1.5 rounded-lg text-gray-200 flex items-center space-x-1.5">
+                    <span>💡</span> <span>Learning</span>
+                </span>
+            </div>
+
+            <!-- Telegram CTA Button -->
+            <div>
+                <a href="#" onclick="handleTelegramClick(event)" class="cta-btn w-full py-4 px-4 rounded-xl font-bold text-sm text-white flex items-center justify-center space-x-2 shadow-lg glow-effect transition transform active:scale-95 cursor-pointer">
+                    <span>✈️</span>
+                    <span>JOIN FREE TELEGRAM CHANNEL</span>
+                    <span>→</span>
                 </a>
             </div>
 
-            <!-- Main Content Area -->
-            <div class="p-5 space-y-6">
-
-                <!-- Profile Header -->
-                <div class="flex items-center space-x-3">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Trade With Gautam" class="w-12 h-12 rounded-full border-2 border-indigo-500 object-cover">
+            <!-- Community Status Card -->
+            <div class="bg-[#141730] border border-gray-800 rounded-2xl p-4 space-y-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-3 h-3 bg-green-500 rounded-full inline-block animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.7)]"></span>
+                        <span class="font-semibold text-sm text-white">Community is active</span>
                     </div>
-                    <div>
-                        <div class="flex items-center space-x-1">
-                            <h2 class="font-bold text-base text-white">Trade With Gautam</h2>
-                            <span class="text-blue-400 text-xs">✔</span>
-                        </div>
-                        <p class="text-xs text-gray-400">Trading & Learning Community</p>
+                    <div class="w-10 h-6 bg-[#252a52] rounded-full p-1 flex items-center cursor-pointer">
+                        <div class="w-4 h-4 bg-gray-400 rounded-full ml-auto"></div>
                     </div>
                 </div>
+                <p class="text-[11px] text-gray-400">Members are joining and learning on Telegram</p>
 
-                <!-- Hero Section -->
-                <div class="space-y-2">
-                    <h1 class="text-3xl font-extrabold tracking-tight leading-tight">
-                        Learn Trading <br>
-                        <span class="gradient-text">The Right Way</span>
-                    </h1>
-                    <p class="text-xs text-gray-300 leading-relaxed">
-                        Simple concepts, market awareness and chart-reading education — brought together in one Telegram community.
-                    </p>
-                </div>
-
-                <!-- Feature Badges -->
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="bg-[#191d38] border border-gray-700/60 px-3 py-1.5 rounded-lg text-gray-200 flex items-center space-x-1.5">
-                        <span>📈</span> <span>Market Concepts</span>
-                    </span>
-                    <span class="bg-[#191d38] border border-gray-700/60 px-3 py-1.5 rounded-lg text-gray-200 flex items-center space-x-1.5">
-                        <span>📊</span> <span>Chart Reading</span>
-                    </span>
-                    <span class="bg-[#191d38] border border-gray-700/60 px-3 py-1.5 rounded-lg text-gray-200 flex items-center space-x-1.5">
-                        <span>💡</span> <span>Learning</span>
-                    </span>
-                </div>
-
-                <!-- Telegram CTA Button -->
-                <div>
-                    <a href="#" onclick="handleTelegramClick(event)" class="cta-btn w-full py-3.5 px-4 rounded-xl font-bold text-sm text-white flex items-center justify-center space-x-2 shadow-lg glow-effect transition transform active:scale-95">
-                        <span>✈️</span>
-                        <span>JOIN FREE TELEGRAM CHANNEL</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- Community Status Card -->
-                <div class="bg-[#141730] border border-gray-800 rounded-2xl p-4 space-y-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <span class="w-3 h-3 bg-green-500 rounded-full inline-block animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.7)]"></span>
-                            <span class="font-semibold text-sm text-white">Community is active</span>
-                        </div>
-                        <div class="w-10 h-6 bg-[#252a52] rounded-full p-1 flex items-center cursor-pointer">
-                            <div class="w-4 h-4 bg-gray-400 rounded-full ml-auto"></div>
-                        </div>
+                <!-- Live Updates Box -->
+                <div class="bg-[#0b0c16] rounded-xl p-3 border border-gray-800/80 space-y-3">
+                    <div class="flex justify-between items-center text-[10px] text-gray-400 font-medium tracking-wider uppercase border-b border-gray-800 pb-2">
+                        <span class="text-green-400 flex items-center space-x-1">
+                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                            <span>LIVE UPDATES</span>
+                        </span>
+                        <span>Recent activity</span>
                     </div>
-                    <p class="text-[11px] text-gray-400">Members are joining and learning on Telegram</p>
 
-                    <!-- Live Updates Box -->
-                    <div class="bg-[#0b0c16] rounded-xl p-3 border border-gray-800/80 space-y-3">
-                        <div class="flex justify-between items-center text-[10px] text-gray-400 font-medium tracking-wider uppercase border-b border-gray-800 pb-2">
-                            <span class="text-green-400 flex items-center space-x-1">
-                                <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-                                <span>LIVE UPDATES</span>
-                            </span>
-                            <span>Recent activity</span>
-                        </div>
-
-                        <!-- Live Ticker Container -->
-                        <div id="live-updates-container" class="space-y-3">
-                            <!-- JS se dynamically add hoga -->
-                        </div>
+                    <!-- Live Ticker Container -->
+                    <div id="live-updates-container" class="space-y-3">
+                        <!-- JS se dynamically add hoga -->
                     </div>
                 </div>
-
             </div>
+
         </div>
 
         <!-- Footer Section with Educational Disclaimer -->
@@ -163,7 +143,7 @@
                 <p class="text-gray-300 font-medium">Learn • Understand • Grow</p>
             </div>
 
-            <!-- Educational Disclaimer Text (Added from Image) -->
+            <!-- Educational Disclaimer Text -->
             <div class="pt-2 border-t border-gray-800/40 text-[10px] leading-relaxed text-gray-400 font-normal">
                 <strong class="text-gray-300">Educational Disclaimer:</strong> This channel is for educational and informational purposes only. The content shared is not financial or investment advice. Please do your own research before making any financial decision.
             </div>
@@ -171,22 +151,17 @@
 
     </div>
 
-    <!-- JavaScript for Dynamic Live Feed & Tracking -->
+    <!-- JavaScript for Dynamic Live Feed & Reliable Tracking -->
     <script>
         // ================= CONFIGURATION =================
-        // Yahan apna Telegram Link dalein:
-        const TELEGRAM_LINK = "https://t.me/+pJSFLW5wD3ZlOWQ1";
+        // Yahan apna sahi Telegram link dalein (jaise: https://t.me/your_channel)
+        const TELEGRAM_LINK = "https://t.me/+your_telegram_invite_link_here";
         // =================================================
-
-        let isClickProcessed = false;
 
         function handleTelegramClick(event) {
             event.preventDefault();
 
-            if (isClickProcessed) return;
-            isClickProcessed = true;
-
-            // Meta Pixel Lead Event
+            // Meta Pixel Lead Event Fire karein
             if (typeof fbq === 'function') {
                 fbq('track', 'Lead', {
                     content_name: 'Telegram Channel Join',
@@ -196,13 +171,12 @@
 
             sessionStorage.setItem('telegram_clicked', 'true');
 
-            setTimeout(() => {
+            // Telegram Link par redirect karein
+            if (TELEGRAM_LINK && TELEGRAM_LINK.includes("t.me")) {
                 window.location.href = TELEGRAM_LINK;
-            }, 300);
-
-            setTimeout(() => {
-                isClickProcessed = false;
-            }, 3000);
+            } else {
+                alert("Please update your Telegram link in the code!");
+            }
         }
 
         // Live Join Simulator
@@ -225,6 +199,7 @@
 
         function renderLiveUpdates() {
             const container = document.getElementById('live-updates-container');
+            if(!container) return;
             container.innerHTML = '';
 
             activeItems.forEach((item, index) => {
