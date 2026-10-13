@@ -7,7 +7,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- META PIXEL CODE SNIPPET (Apna Facebook/Meta Pixel ID yahan dalein) -->
+    <!-- META PIXEL CODE SNIPPET -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -154,7 +154,6 @@
     <!-- JavaScript for Dynamic Live Feed & Reliable Tracking -->
     <script>
         // ================= CONFIGURATION =================
-        // Yahan apna sahi Telegram link dalein (jaise: https://t.me/your_channel)
         const TELEGRAM_LINK = "https://t.me/+pJSFLW5wD3ZlOWQ1";
         // =================================================
 
@@ -171,8 +170,8 @@
 
             sessionStorage.setItem('telegram_clicked', 'true');
 
-            // Telegram Link par redirect karein
-            if (TELEGRAM_LINK && TELEGRAM_LINK.includes("https://t.me/+pJSFLW5wD3ZlOWQ1")) {
+            // Seedha Telegram Link par redirect karein
+            if (TELEGRAM_LINK) {
                 window.location.href = TELEGRAM_LINK;
             } else {
                 alert("Please update your Telegram link in the code!");
